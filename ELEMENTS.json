@@ -1,0 +1,16 @@
+{
+  "ELEMENTS": {
+    "Day":
+    {"U":"U", "V":"V", "W":"W", "T":"Dm", "S":"S", "Pp":"PPd",
+      "H":"Hn", "G":"Gn", "F":"FDm", "D":"D"},
+    "Night":
+    {"V":"V", "W":"W", "T":"Nm", "S":"S", "Pp":"PPn",
+      "H":"Hm", "G":"Gm", "F":"FNm", "D":"D"},
+    "Default":
+    {"V":"V", "W":"W", "T":"T", "S":"S", "Pp":"Pp",
+      "H":"H", "G":"G", "F":"F", "D":"D", "U":"U"},
+    "Observation":
+    {"T":"T", "V":"V", "D":"D", "S":"S",
+      "W":"W", "P":"P", "Pt":"Pt", "Dp":"Dp", "H":"H"}
+  }
+}
