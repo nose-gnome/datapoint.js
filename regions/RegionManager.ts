@@ -6,7 +6,7 @@ const REGIONS_BASE_URL = 'http://datapoint.metoffice.gov.uk/public/data/txt/wxfc
 /**
  * Datapoint Manager for national and regional text forecasts
  */
-export class RegionManager<T>{
+export class RegionManager{
     public api_key: string;
 
     public all_regions_path = '/sitelist';
@@ -15,7 +15,7 @@ export class RegionManager<T>{
     public regions_last_request = null;
     public regions_update_time = 3600;
 
-    constructor(api_key, base_url=null, kwargs) {
+    constructor(api_key, base_url=null, kwargs?) {
         this.api_key = api_key;
         if (!base_url){
             this.base_url = REGIONS_BASE_URL;
