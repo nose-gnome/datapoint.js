@@ -8,8 +8,8 @@ const FORECAST_DATE_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 import {ELEMENTS} from "./ELEMENTS.json";
 
-import {WEATHER_CODES} from "../WEATHER_CODES.json";
-import {Site} from "src/Site";
+import {WEATHER_CODES} from "./WEATHER_CODES.json";
+import {Site} from "Site";
 const time = () => {
     return Date.now() / 1000;
 }
@@ -101,7 +101,7 @@ export class Manager{
      * Translates weather code to English meaning
      * @param code
      */
-    public _weather_to_text(code: int){
+    public _weather_to_text(code: number){
         if (code < 0 || code > 30){
             throw new Error("Weather code outof bounds, should be 0.30");
         } else {
@@ -113,7 +113,7 @@ export class Manager{
      * Convert observed visibility in metres to text used in forecast.
      * @param distance
      */
-    public _visibility_to_text(distance: int){
+    public _visibility_to_text(distance: number){
         if (distance<0){
             throw new Error("Distance out of bounds, should be 0 or greater!");
         } else {
