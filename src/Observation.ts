@@ -12,7 +12,7 @@ class Observation{
 
     constructor() {
     }
-    now(){
+    public now(){
         return this.days[-1].timestamp[-1];
     }
 }
