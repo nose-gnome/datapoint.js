@@ -1,7 +1,7 @@
 import {REGION_NAMES} from './region_names.json';
 import {StatusCodes} from "http-status-codes";
-import {Site} from "src/Site"
-import {time} from "src/time";
+import {Site} from "Site"
+import {time} from "time";
 
 const REGIONS_BASE_URL = 'http://datapoint.metoffice.gov.uk/public/data/txt/wxfcs/regionalforecast/json'
 /**
