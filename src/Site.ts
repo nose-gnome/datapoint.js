@@ -11,6 +11,8 @@ export class Site{
     public region = null;
     public unitaryAuthArea = null;
 
+    public api_key;
+
     constructor(kwargs?) {
         for (const item in this){
             if (item in kwargs){

@@ -2,7 +2,7 @@
   "name": "datapoint",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "main": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

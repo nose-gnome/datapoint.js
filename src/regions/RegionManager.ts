@@ -1,6 +1,7 @@
 import {REGION_NAMES} from './region_names.json';
 import {StatusCodes} from "http-status-codes";
-import {Site} from "Site"
+import {Site} from "src/Site"
+import {time} from "src/time";
 
 const REGIONS_BASE_URL = 'http://datapoint.metoffice.gov.uk/public/data/txt/wxfcs/regionalforecast/json'
 /**
@@ -44,7 +45,7 @@ export class RegionManager{
      * for one hour to minimise requests to API.
      */
     get_all_regions() {
-        if (Date.now()/1000 - this.regions_last_update < this.regions_update_time){
+        if (time() - this.regions_last_update < this.regions_update_time){
             return this.regions_last_request;
         }
 
@@ -59,7 +60,7 @@ export class RegionManager{
             });
             regions.push(region);
         }
-        this.regions_last_update = Date.now()/1000;
+        this.regions_last_update = time();
         this.regions_last_request = regions;
         return regions;
     }

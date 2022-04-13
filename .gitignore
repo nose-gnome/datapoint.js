@@ -1,9 +1,9 @@
 # Project exclude paths
 /node_modules/
-/regions/index.js
-/regions/index.js.map
-/regions/RegionManager.js
-/regions/RegionManager.js.map
+/src/regions/index.js
+/src/regions/index.js.map
+/src/regions/RegionManager.js
+/src/regions/RegionManager.js.map
 /index.js
 /index.js.map
 /Manager.js
